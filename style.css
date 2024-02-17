@@ -1,0 +1,231 @@
+html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+
+}
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    flex-direction: column;
+}
+.Media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4cm;
+    padding-top: 0.3cm;
+    animation: swipeLeftAnimation 1s ease forwards;
+}
+.fa-brands {
+    font-size: 0.6cm;
+    color: rgb(44, 133, 210);
+}
+body{
+    background-image: url('b2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    position: relative;
+    background-position: center; /* Center the background image */
+
+}
+.skills{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4cm;
+    padding-bottom: 1cm;
+}
+.skills> img{
+    height: 3cm !important;
+    width: 3cm !important;
+    border-radius: 10cm !important;
+}
+.ico{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(1px); 
+    color: #fff !important;
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.mb-3{
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s;
+}
+.navbar{
+    position: fixed !important;
+    width: 100%; /* Ensuring navbar takes the full width */
+    z-index: 1000;}
+.nav-link {
+    color: #fff !important; /* white nav links */
+}
+.nav-pills>.nav-link:hover {
+    background-color: white;
+    color: black !important;
+}
+.nav-link.active {
+    color: #ffc107 !important; /* active nav link color */
+}
+.Media .fa-brands {
+    color: #fff; /* social media icon color */
+}
+.row{
+    color: white;
+}
+@keyframes flyIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) ;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: flyIn 1s ease forwards;
+}
+.fade-in.active {
+    opacity: 1;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+}
+.card {
+    margin: 1cm;
+    border-radius: 0.5cm !important;
+}
+.card>img{
+    border-radius: 0.5cm !important;
+}
+.edu{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 1cm;
+    backdrop-filter: blur(1px); 
+    border-radius: 0.5cm;
+}
+.card,.card-body{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(1px); 
+    color: #fff !important;
+}
+@keyframes swipeFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
+
+.edu .card {
+    opacity: 0;
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Add delay for each card to create a staggered effect */
+}
+.card.active {
+    opacity: 0;
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Add delay for each card to create a staggered effect */
+}
+
+/* Adjust animation properties as needed */
+.ach{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 1cm;
+    backdrop-filter: blur(1px); 
+    border-radius: 0.5cm;
+}
+
+.ach .card {
+    opacity: 0;
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Add delay for each card to create a staggered effect */
+}
+.projects{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 1cm;
+    backdrop-filter: blur(1px); 
+    border-radius: 0.5cm;
+}
+.projects .card {
+    opacity: 0;
+    animation: swipeFromLeft 1s ease forwards;
+    animation-delay: 0.5s; /* Add delay for each card to create a staggered effect */
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 80% !important; /* Decrease font size by 15% */
+    }
+    .home h2 {
+        font-size: 0.7cm !important; /* Adjust font size to 1% of the viewport height */
+    }
+    .home h5 {
+        font-size: 0.4cm !important; /* Decrease font size to 0.2cm */
+    }
+    .home h6 {
+        font-size: 0.4cm !important; /* Decrease font size to 0.25cm */
+    }
+    .home .profile{
+        width: 5cm !important;
+        height: 5cm !important;
+    }
+    .projects, .ach, .edu{
+        padding: 0 !important;
+    }
+    #video{
+        width: 7cm !important;
+        height: 4cm !important;
+    }
+    .skills {
+        flex-wrap: wrap;
+
+    }
+
+    .skills > img {
+        height: 2cm !important;
+        width: 2cm !important;
+        border-radius: 50% !important;
+    }
+
+    .skills > * {
+        width: 50% !;
+        text-align: center;
+    }
+}
+.modal-content {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Adjust the alpha value for transparency */
+    backdrop-filter: blur(10px)  !important; /* Apply blur effect to the background */
+    border: none; /* Remove border */
+    color: white  !important; /* Set text color to white */
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: none; /* Remove bottom border from header */
+}
+
+.modal-footer {
+    border-top: none; /* Remove top border from footer */
+}
+
+.modal-title {
+    color: white  !important; /* Set title text color to white */
+}
+
+
+
+  
