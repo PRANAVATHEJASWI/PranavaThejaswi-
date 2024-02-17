@@ -127,7 +127,24 @@ body{
     }
     
 }
-
+.float{
+    position: fixed;
+    animation: bounce 2s infinite;
+    bottom: 23px;
+    right: 20px;
+    z-index: 10003;
+}
+.bot-icon-btn{
+    height: 1.4cm;
+    width :1.4cm;
+    background-color: #52a7e0;
+    border-radius: 10cm;
+    border-width: 0;
+}
+.fa-robot{
+    font-size: 0.6cm;
+    color: #fff;
+}
 .edu .card {
     opacity: 0;
     animation: swipeFromLeft 1s ease forwards;
