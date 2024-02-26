@@ -24,8 +24,7 @@ html {
     color: rgb(44, 133, 210);
 }
 body{
-    background-image: url('b2.gif');
-    background-repeat: no-repeat;
+    background-color: #192a56;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     position: relative;
