@@ -24,7 +24,7 @@ html {
     color: rgb(44, 133, 210);
 }
 body{
-    background-color: #192a56;
+    background-color: #2d3436 !important;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     position: relative;
