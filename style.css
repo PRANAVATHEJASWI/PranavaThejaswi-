@@ -24,13 +24,12 @@ html {
     color: rgb(44, 133, 210);
 }
 body{
-   background-color: #2d3436 !important;
+    background-color: #2d3436 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; /* Keeps the background fixed while scrolling */
     position: relative;
     background-position: center; /* Center the background image */
-
 }
 .skills{
     display: flex !important;
